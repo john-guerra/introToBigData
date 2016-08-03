@@ -1,6 +1,6 @@
-@import '../lib/css/reveal.css'
-@import '../lib/css/theme/simple.css'
-@import '../lib/css/zenburn.css'
+@import 'lib/css/reveal.css'
+@import 'lib/css/theme/simple.css'
+@import 'lib/css/zenburn.css'
 
 blue = #4682b4
 
@@ -13,9 +13,6 @@ blue = #4682b4
   h1, h2, h3, h4, h5, h6
     margin-top .25em
     margin-bottom .75em
-
-  h1.demo, h2.demo, h3.demo, h4.demo, h5.demo, h6.demo
-    margin-top -0.50em
   ul
     list-style-type circle
   pre
@@ -38,7 +35,7 @@ blue = #4682b4
       content ''
   iframe.blocks
     width 960px
-    height 650px
+    height 450px
     margin-left -30px
   section
     img
@@ -47,14 +44,13 @@ blue = #4682b4
 
   #title
     h1, h2, h3, h4, h5, h6
-      // text-transform none
+      text-transform none
       font-family 'Helvetica Neue', sans-serif
-      // font-weight lighter
+      font-weight lighter
       letter-spacing -.05em
       margin 0
-      // margin-top -0.5em
-    // h3
-      // margin 1.5em 0 1em
+    h3
+      margin 1.5em 0 1em
     h1
       font-size 3.2em
   img.demo
@@ -66,12 +62,7 @@ blue = #4682b4
       width: 33%
   .small
     font-size 80%
-  .tiny
-    font-size 60%
-
-  .authors
-    font-size 70%
-
+    
   #handsOn
     pre
       width: 70%
@@ -82,10 +73,10 @@ blue = #4682b4
       width: 25%
       float: left
       font: 10px sans-serif
-      rect
+      rect  
         fill: steelblue
-      circle
-        opacity: 0.3
+      circle  
+        opacity: 0.3      
       path.line
         fill: none
         stroke: #666
@@ -102,65 +93,53 @@ blue = #4682b4
         fill: none
       .y.axis line, .y.axis path
         fill: none
-        stroke: #333
+        stroke: #333      
     button.execute
       clear: both
       font-size: 0.8em
-
+      
     div.followLink
       font-size: 0.6em
-
-
+      
+    
   .contactInfo
     text-align: right
-    a
+    a 
       font-size: 0.6em
-
-  .red
-    color: #e80000;
-
-  img.side
-    float:left;
-    width:45%;
-    padding: 0 5px 0 5px;
-
-  .clear
-    clear:both;
-
-
+      
   #munznerpreferencechart
     color: white
-    font-size: 0.6em
-    .line
+    font-size: 0.6em 
+    .line 
       stroke: #4A90E2
       stroke-width: 25
       stroke-opacity: 0.30
       fill: none
-    .box
-      // text
+    .box 
+      // text 
       //   opacity: 0
-      rect
-        fill-opacity: 0.75
-    .box:hover text
+      rect 
+        fill-opacity: 0.75        
+    .box:hover text 
       opacity: 1
-    .mainArea.selected
-      .line.selected
+    .mainArea.selected 
+      .line.selected 
         opacity: 0.9
-      .line
+      .line 
         opacity: 0.1
-      .box
+      .box 
         opacity: 0.1
       .box.selected
         opacity: 0.9
-    .box text
+    .box text 
       pointer-events: none
       font-size: 14pt
     .axis path, .axis line
       fill: none
       /*stroke: #ccc*/
       shape-rendering: crispEdges
-    .y.axis line
+    .y.axis line 
       stroke: white
-    text
+    text 
       font-size: 22pt
 

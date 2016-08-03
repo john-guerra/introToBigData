@@ -1,6 +1,6 @@
-@import '../lib/css/reveal.css';
-@import '../lib/css/theme/simple.css';
-@import '../lib/css/zenburn.css';
+@import 'lib/css/reveal.css';
+@import 'lib/css/theme/simple.css';
+@import 'lib/css/zenburn.css';
 .reveal p,
 .reveal ol,
 .reveal ul,
@@ -25,14 +25,6 @@
 .reveal h6 {
   margin-top: 0.25em;
   margin-bottom: 0.75em;
-}
-.reveal h1.demo,
-.reveal h2.demo,
-.reveal h3.demo,
-.reveal h4.demo,
-.reveal h5.demo,
-.reveal h6.demo {
-  margin-top: -0.5em;
 }
 .reveal ul {
   list-style-type: circle;
@@ -61,7 +53,7 @@
 }
 .reveal iframe.blocks {
   width: 960px;
-  height: 650px;
+  height: 450px;
   margin-left: -30px;
 }
 .reveal section img {
@@ -74,9 +66,14 @@
 .reveal #title h4,
 .reveal #title h5,
 .reveal #title h6 {
+  text-transform: none;
   font-family: 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
   letter-spacing: -0.05em;
   margin: 0;
+}
+.reveal #title h3 {
+  margin: 1.5em 0 1em;
 }
 .reveal #title h1 {
   font-size: 3.2em;
@@ -92,12 +89,6 @@
 }
 .reveal .small {
   font-size: 80%;
-}
-.reveal .tiny {
-  font-size: 60%;
-}
-.reveal .authors {
-  font-size: 70%;
 }
 .reveal #handsOn pre {
   width: 70%;
@@ -153,17 +144,6 @@
 }
 .reveal .contactInfo a {
   font-size: 0.6em;
-}
-.reveal .red {
-  color: #e80000;
-}
-.reveal img.side {
-  float: left;
-  width: 45%;
-  padding: 0 5px 0 5px;
-}
-.reveal .clear {
-  clear: both;
 }
 .reveal #munznerpreferencechart {
   color: #fff;
